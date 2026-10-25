@@ -1,0 +1,79 @@
+Here are all 43 of your messages in order. I've quoted your own words as you wrote them and summarized pasted code, errors and notebook text in [brackets].
+
+**Setup**
+
+1. [Screenshot of the "Before you come" checklist] "i am getting ready for a hackathon and i need to prepare my laptop. what i want to be able to do is to delete everything related to this once i am done without needing to bend over backwards"
+2. "its on linux, also how do i delete a venv?"
+3. "ok we installed the libraries how do i open the notebook and download the dataset"
+4. "oh no im creating a new notebook etc. so i have created a new notebook but i have no idea how to install shit i chose the kernel also how do i know if the file is in the folder?"
+5. "if print(os.listdir()) doesnt show venv cus it in the root directory of the project folder while the notebook is somewhere else is good right?"
+6. "cant i use thsi" [kagglehub code with `file_path` set to your folder]
+7. [kagglehub code without the third argument]
+8. "ok so now i am ready. give me a small heads up on what each lib is used for so i can have an idea"
+
+**Part 1: loss and gradients**
+
+9. "ok so i have this exercise without giving me the answer help me solve it, i wrote this" [Exercise 1.1 BCE loop code and IndexError]
+10. "FILL_IN.mean(-y*torch.log(p)+(1-y)*log(1-p))"
+11. [BCE code with `.mean` missing its brackets, and the TypeError]
+12. "help me figure this one as well" [gradient descent loop with FILL_IN]
+13. "1. what do you mean which way it goes uphill? can you explain the theory behind this?"
+14. "ok i like how you explain this from now on please explain these stuff, especially the math part like i didnt understand this section bcs i didnt know that i had to take the gradient of the loss function to get the gradient. but dont give me the answer just guide me through the exercises where i need help"
+15. "what is it meant by zero.grad like you forget the previous grads bcs this is used to calculate the what?"
+
+**Parts 2–3: metrics**
+
+16. [fraud rate code, version 1: `n_fraud/n_legit`]
+17. [fraud rate code, version 2: `n_fraud/df["Class"]`]
+18. "theres whong the calculations help" [fraud rate code, version 3: `sum(df["Class"])`]
+19. "can you explai recal, f1 and mcc? using examples or ideas"
+20. "can you give me the rules of confusion matrix generalised?"
+21. "when is something positive and when is something negative thats the part i didnt understand generally not the example"
+22. "is this not correct?" [`confusion_counts` and `precision_recall_f1`]
+23. "only for this one give me the aanswer" [Check 3.1 ZeroDivisionError]
+24. "can you explain the tehory" [Section 3.2 text on ROC/PR curves]
+25. "how do the thresholds change? short answer" [Section 3.3 text]
+
+**Part 4: data prep**
+
+26. "i dont understand the function" [`train_test_split` code]
+27. "ok so test size has to be 25 percent but i dont get the stratify part"
+28. "explain this only by the things i need to now" [Section 4.3 and Exercise 4.2 text]
+29. "how do i decide the size"
+30. "ok help me figure this out give me the answers cu explanation im late" [`undersample` code]
+31. "tldr"
+32. "explain what is meant here what is it asking for me to do" [`AngleEncoder` code]
+33. "explain to me bro i dont want to solve it anymore" [`AngleEncoder` code again]
+34. "tldr expalanation"
+35. "1. why what does it help with"
+
+**Part 5: PennyLane**
+
+36. "explain to me how i would solvve this idea the theory i undrstood" [Part 5 text and Exercise 5.1 code]
+37. [Check 5.1 WireError traceback]
+38. [`bell()` circuit code]
+39. "dumbed down version?" [Section 5.3 text on shots]
+40. [Section 5.4 text on broadcasting]
+41. "give me tldr"
+42. "tldr" [Section 5.5 text on gradients]
+43. "give me the list of all the prompts i have used"
+
+Here are the prompts you sent in this conversation, in order. Your typed text is quoted exactly as you wrote it, and pasted code or output is described in brackets.
+
+1. *[uploaded `fraud_vqc_task2.ipynb.txt`]* "ok so this is the notebook for the kackathon that i am working on, i need you to help me inprove it so that it gets semi presentable"
+2. "ok lets go one by one in a manner to fix structural problems rather then packaging. so after peint 7 the cell thats has the regressions the logistic one and the linear one have same aurpc racking this shouldnt be possible. lets start with fizing this part, also give me a list of most important bugs ranked from severe to ok so we can fix them"
+3. "also can you give this to me by the section number not cell number? if this aurc is ok then the first actual bug is after section 15:" *[Section 15 self-check code + `AssertionError` traceback]*
+4. *[output of the A/B/C/D noise-simulator diagnostic, no text]*
+5. *[training cell code + output for 5 seeds and the SH tournament]* "please explain what is going on with these results tldr"
+6. *[common-metric comparison table: SH vs plain vs logistic regression, no text]*
+7. *[training cell code + `KeyError: 'best val ROC-AUC (sampled)'`, no text]*
+8. "how did we change the data set/ validation/training"
+9. "ok the values are better but the model gets dumber when you think about it bcs it doesnt do the learning"
+10. *[learning diagnostic table: at init vs trained, selection vs learning gain, no text]*
+11. "ok can you explain the dumb version of what is the state of the situation now"
+12. "can we talk about" *[re-run training output with `SH_VAL_EVERY = 3`, learning table, and per-seed SH − plain difference with the Wilcoxon test]*
+13. "ok we have 10 mins left lets not optimize as long as its functional its good"
+14. "what are important grapghs and shit to add to the presentation"
+15. "can you give me code to make a graogh thats shows something related to the cost"
+16. "where do i put this"
+17. "give me a list of the prompts"
