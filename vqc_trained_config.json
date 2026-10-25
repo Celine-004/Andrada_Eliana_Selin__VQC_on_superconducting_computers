@@ -1,0 +1,1 @@
+{"seeds": [0, 1, 2, 3, 4], "epochs_plain": 30, "lr": 0.05, "batch": 32, "sh": [8, [0.25, 0.5, 1.0], [100, 1024, 1024], 2, 18, 5000, 3, false], "arch": [4, 2, 3], "balancing": "undersample", "sh_selection": "weighted AUPRC, final-stage checkpoints only"}
